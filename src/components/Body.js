@@ -2,75 +2,33 @@ import React from "react";
 import Photo from './javascript.png'
 
 const Body = () =>{
-    return(
-        <div>
-      <h1 className="flex justify-center text-5xl font-bold w-1/2">More recents</h1> 
-      <div>
-       <div className="hidden md:flex justify-center py-12 ">
+   const container = <div className="hidden md:flex justify-center py-12 ">
         <div className="px-12 w-1/2">
-           
            <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
             <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
              lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
         </div>
        <div className="h-1/5 w-1/5"> <img src={Photo} alt="photo"/></div>
        </div>
-       <div className="hidden md:flex justify-center py-12">
-        <div className="px-12 w-1/2">
-           
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="h-1/5 w-1/5"> <img src={Photo} alt="photo"/></div>
-       </div>
-       <div className="hidden md:flex justify-center py-12">
-        <div className="px-12 w-1/2">
-           
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="h-1/5 w-1/5"> <img src={Photo} alt="photo"/></div>
-       </div>
-       <div className="hidden md:flex justify-center py-12">
-        <div className="px-12 w-1/2">
-           
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="h-1/5 w-1/5"> <img src={Photo} alt="photo"/></div>
-       </div>
-       <div>
-       <div className="md:hidden justify-center py-12">
-        <div className="px-12 w-full">
-        <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="px-12 w-full">
-        <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="px-12 w-full">
-        <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
-        <div className="px-12 w-full">
-        <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
-           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
-            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
-             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
-        </div>
+
+       const responsiveContainer =  <div className="md:hidden justify-center py-12 px-12 w-full">
+       <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
+          <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
+           <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
+            lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
        </div>
 
-       </div>
+       var data = [];
+       for(let i=0;i<4;i++){
+         data.push(container);
+         data.push(responsiveContainer);
+         console.log(i);
+       }
+    return(
+        <div>
+      <h1 className="flex justify-center text-5xl font-bold w-1/2">More recents</h1> 
+      <div>
+       {data} 
        </div>
        <div className="flex justify-center">
       <button className="flex justify-center bg-sky-300 text-black w-36 h-7 border rounded-xl hover:bg-sky-500 ">assfasd</button>
