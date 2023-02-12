@@ -10,14 +10,12 @@ const Body = () =>{
         </div>
        <div className="h-1/5 w-1/5"> <img src={Photo} alt="photo"/></div>
        </div>
-
        const responsiveContainer =  <div className="md:hidden justify-center py-12 px-12 w-full">
        <div className="h-1/5 w-1/5 mt-8"> <img src={Photo} alt="photo"/></div>
           <h2 className="font-bold text-3xl pt-8 pb-4">Revolutiozing retail banking: how fintech is transforming the industry</h2>
            <p className="text-black text-xl"> lorem ipsum dolor sit amet de por favour es konsildas 
             lorem ipsum dolor sit amet de por favour es konsildas  lorem ipsum dolor sit amet de por favour es konsildas</p>
        </div>
-
        var data = [];
        for(let i=0;i<4;i++){
          data.push(container);
