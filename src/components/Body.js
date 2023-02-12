@@ -81,7 +81,7 @@ const Body = () =>{
             <p className="flex justify-center text-white ">lorem ipsum dolor sit amet de la si por favour
             lorem ipsum dolor sit</p>
             <div className="flex justify-center my-4">
-            <input type={String} placeholder="recommended qwerd" className="w-1/3"></input>
+            <input type="text" placeholder="recommended qwerd" className="w-1/3"></input>
             <button className="bg-teal-300 w-20 hover:bg-teal-500">Submit</button>
             </div>
         </div>
