@@ -2,7 +2,6 @@
  import Summary from './components/Summary'
  import Body from './components/Body'
  import Footer from './components/Footer'
-import './App.css';
 
 const App = () => {
   return (
