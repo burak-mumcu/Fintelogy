@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="justify-start">
         <h6 className="text-white font-bold">blabla</h6>
-        <input type={String} placeholder="recommended qwerd" className="w-32 bg-gray-300 border"></input>
+        <input type="text" placeholder="recommended qwerd" className="w-32 bg-gray-300 border"></input>
         </div>
         </div>
     )
