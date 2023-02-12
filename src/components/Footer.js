@@ -15,7 +15,6 @@ const Footer = () => {
         </div>
         <div>
         <ul className="justify-start">
-                
                 <li className="text-white my-1 mt-6">abcdfdsdfsa</li>
                 <li className="text-white my-1">lfkdgldf</li>
                 <li className="text-white ">lfdkmgld</li>
@@ -23,7 +22,6 @@ const Footer = () => {
         </div>
         <div>
         <ul className="justify-start">
-        
                 <li className="text-white my-1 mt-6">abcdfdsdfsa</li>
                 <li className="text-white my-1">lfkdgldf</li>
                 <li className="text-white">lfdkmgld</li>
